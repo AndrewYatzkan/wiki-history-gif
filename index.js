@@ -24,7 +24,7 @@ module.exports.GIF = async (URL, width, height, outputFile="out.gif", delay=500,
 		stream.on("finish", () => {
 			for (var i = 0; i < urls.length; i++) {
 				var fileName = `img${i}.png`;
-				fs.unlinkSync(fileName);
+				try { fs.unlinkSync(fileName); } catch {}
 			}
 		});
 	} catch (e) {
