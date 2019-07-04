@@ -9,6 +9,10 @@
   "keywords": ["wikipedia", "wikimedia", "gif", "png"],
   "author": "Andrew Yatzkan",
   "license": "ISC",
+  "homepage": "https://github.com/AndrewYatzkan/wiki-history-gif#readme",
+  "bugs": {
+    "url": "https://github.com/AndrewYatzkan/wiki-history-gif/issues"
+  },
   "dependencies": {
     "gifencoder": "^2.0.1",
     "jsdom": "^15.1.1",

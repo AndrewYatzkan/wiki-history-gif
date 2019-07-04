@@ -5,7 +5,7 @@ const { JSDOM } = jsdom;
 const GIFEncoder = require('gifencoder');
 const pngFileStream = require('png-file-stream');
 
-module.exports.GIF = async (URL, width=100, height=100, outputFile="out.gif", delay=500, repeat=false) => {
+module.exports.GIF = async (URL, width, height, outputFile="out.gif", delay=500, repeat=false) => {
 	try {
 		const encoder = new GIFEncoder(width, height);
 		var req = await fetch(URL);
@@ -31,5 +31,3 @@ module.exports.GIF = async (URL, width=100, height=100, outputFile="out.gif", de
 		throw e;
 	}
 };
-
-module.exports.GIF("https://commons.wikimedia.org/wiki/File:Example.png", 172, 178, "out.gif", 500, false);
