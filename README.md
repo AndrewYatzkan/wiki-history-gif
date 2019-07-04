@@ -10,12 +10,12 @@ const { GIF } = require("wiki-history-gif");
 ```
 
 # Parameters:
-URL - link to image page (commons.wikimedia.org domain)
-Width - GIF width
-Height - GIF height
-Output File - Output file name (Default: "./out.gif")
-Delay - GIF delay (ms) between switching frames (Default: 500)
-Repeat - Should the GIF be an infinite loop? (Default: false)
+- URL - link to image page (commons.wikimedia.org domain)
+- Width - GIF width
+- Height - GIF height
+- Output File - Output file name (Default: "./out.gif")
+- Delay - GIF delay (ms) between switching frames (Default: 500)
+- Repeat - Should the GIF be an infinite loop? (Default: false)
 
 # Future additions
-Currently this package only supports converting PNG files to GIFs. In the future I would like to support more file formats.
+- Currently this package only supports converting PNG files to GIFs. In the future I would like to support more file formats.
